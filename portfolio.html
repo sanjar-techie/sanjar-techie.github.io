@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjar Atamuradov - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: black;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .nav a.active {
+            border-bottom: 2px solid black;
+        }
+        .project {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Resume</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+    </div>
+
+    <h1>Sanjar Atamuradov - Portfolio</h1>
+
+    <div class="project">
+        <h2>Quadruped Robot System</h2>
+        <img src="images/quadruped_robot.jpg" alt="Quadruped Robot">
+        <p>Developed and integrated a complete quadruped robot system, focusing on both hardware assembly and software implementation. Implemented reinforcement learning-based controllers for quadruped robot locomotion, enhancing stability and adaptability in various terrains.</p>
+        <a href="#" target="_blank">Watch Demo</a>
+    </div>
+
+    <div class="project">
+        <h2>Autonomous Mobile Robots (AMRs) for Warehouse Automation</h2>
+        <img src="images/amr_warehouse.jpg" alt="AMR in Warehouse">
+        <p>Built AMRs implementing autonomous navigation systems using the Nav2 open-source framework. Developed a custom control package for docking the AMR based on apriltag detection.</p>
+        <a href="#" target="_blank">Watch Demo</a>
+    </div>
+
+    <div class="project">
+        <h2>Autonomous Gesture-controlled Drone</h2>
+        <img src="images/gesture_drone.jpg" alt="Gesture-controlled Drone">
+        <p>Developed a ROS-based mission planner for dynamic task handling, such as human approach, photo capture, and pose-based maneuvers. Utilized ORB_SLAM3 for visual navigation and implemented a PID velocity controller.</p>
+        <a href="https://github.com/sanjar-techie/AirGestureControl" target="_blank">View on GitHub</a> |
+        <a href="#" target="_blank">Watch Demo</a>
+    </div>
+
+    <div class="project">
+        <h2>AI-based Medical Diagnosis</h2>
+        <img src="images/medical_ai.jpg" alt="Medical AI Diagnosis">
+        <p>Implemented a ResNet-50 model with CBAM for lesion classification, leveraging TensorFlow for medical diagnosis. Conducted data augmentation on the HAM10000 dataset to address class imbalance and improve accuracy.</p>
+        <a href="https://github.com/sanjar-techie/lesion-classification" target="_blank">View on GitHub</a>
+    </div>
+</body>
+</html>
