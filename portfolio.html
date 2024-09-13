@@ -59,6 +59,21 @@
     </style>
 </head>
 <body>
+    <div class="nav-toggle" onclick="toggleNav()">
+        <i class="fas fa-paper-plane"></i>
+    </div>
+    <nav class="nav" id="nav">
+        <a href="index.html" class="active">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+    
+    <script>
+    function toggleNav() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
+    </script>
+    
     <div class="nav">
         <a href="index.html">Resume</a>
         <a href="portfolio.html" class="active">Portfolio</a>
