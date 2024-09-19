@@ -13,55 +13,101 @@
             color: #333;
             background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .nav {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
         .nav a {
             color: #333;
             text-decoration: none;
-            margin-left: 15px;
+            margin-right: 15px;
             font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #007bff;
         }
         .nav a.active {
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #007bff;
         }
-        .paper {
-            max-width: 800px;
-            margin: 40px auto;
+        .container {
+            max-width: 1000px;
+            margin: 80px auto 20px;
+            padding: 20px;
             background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border: 1px solid #e0e0e0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         h1 {
             text-align: center;
             font-size: 2.5em;
             margin-top: 0;
+            color: #2c3e50;
         }
         .project {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             border-bottom: 1px solid #e0e0e0;
             padding-bottom: 20px;
         }
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border: 1px solid #e0e0e0;
-        }
         .project h2 {
             color: #2c3e50;
+            font-size: 1.8em;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
         }
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
-            display: block;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .profile-info {
+            flex-grow: 1;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 48%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -71,36 +117,47 @@
         <a href="portfolio.html" class="active">Portfolio</a>
     </div>
 
-    <div class="paper">
-        <img src="./resources/profile.jpg" alt="Sanjar Atamuradov" class="profile-img">
-        <h1>Sanjar Atamuradov - Engineering Portfolio</h1>
+    <div class="container">
+        <div class="profile-section">
+            <img src="resources/profile.jpg" alt="Sanjar Atamuradov" class="profile-img">
+            <div class="profile-info">
+                <h1>Sanjar Atamuradov</h1>
+                <p>Innovative Robotics Engineer | AI Enthusiast | Problem Solver</p>
+            </div>
+        </div>
 
         <div class="project">
             <h2>Quadruped Robot System: Pushing the Boundaries of Legged Locomotion</h2>
-            <img src="./resources/quadruped1.jpg" alt="Quadruped Robot">
-            <img src="./resources/quadruped2.jpg" alt="Quadruped Robot in Action">
+            <div class="image-container">
+                <img src="resources/quadruped1.jpg" alt="Quadruped Robot">
+                <img src="resources/quadruped2.jpg" alt="Quadruped Robot in Action">
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/U2KB_e_6qTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <p>Embark on a journey through the cutting-edge world of quadruped robotics. This project showcases the fusion of advanced mechanical design and sophisticated AI algorithms, resulting in a robot capable of navigating complex terrains with unprecedented agility. Witness how reinforcement learning pushes the boundaries of what's possible in legged locomotion, opening doors to applications in search and rescue, planetary exploration, and beyond.</p>
-            <a href="https://youtube.com/shorts/U2KB_e_6qTM?feature=share" target="_blank">Watch Demo</a>
         </div>
 
         <div class="project">
             <h2>Revolutionizing Warehouse Logistics with Autonomous Mobile Robots (AMRs)</h2>
-            <img src="/api/placeholder/400/320" alt="AMR in Warehouse">
+            <img src="resources/amr.PNG" alt="AMR in Warehouse" class="project-image">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/OQCnwZKU0rQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <p>Step into the future of warehouse automation with our fleet of Autonomous Mobile Robots (AMRs). This project demonstrates how intelligent navigation systems and custom docking solutions can transform traditional warehouses into smart, efficient logistics hubs. Experience firsthand how these robots navigate dynamic environments, interact with human workers, and optimize inventory management, paving the way for Industry 4.0.</p>
-            <a href="https://youtube.com/shorts/OQCnwZKU0rQ?feature=share" target="_blank">Watch AMRs in Action</a>
         </div>
 
         <div class="project">
             <h2>Air Gesture Control: Redefining Human-Drone Interaction</h2>
-            <img src="/api/placeholder/400/320" alt="Gesture-controlled Drone">
+            <img src="resources/drone.PNG" alt="Gesture-controlled Drone" class="project-image">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/jC1L5EdkM9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <p>Imagine controlling a drone with just a wave of your hand. This project brings that sci-fi concept to life, showcasing an intuitive gesture-based interface for drone control. By combining computer vision, machine learning, and advanced flight algorithms, we've created a system that not only responds to human gestures but also maintains stable flight and performs complex maneuvers autonomously. Explore the potential of this technology in fields ranging from cinematography to search and rescue operations.</p>
-            <a href="https://github.com/sanjar-techie/AirGestureControl" target="_blank">View on GitHub</a> |
-            <a href="https://youtu.be/jC1L5EdkM9w" target="_blank">Watch Demo</a>
         </div>
 
         <div class="project">
             <h2>AI in Healthcare: Advancing Dermatological Diagnostics</h2>
-            <img src="/api/placeholder/400/320" alt="Medical AI Diagnosis">
             <p>Delve into the intersection of artificial intelligence and medical diagnostics with our advanced skin lesion classification system. This project showcases how deep learning models can assist dermatologists in identifying potential skin cancers with high accuracy. By leveraging state-of-the-art computer vision techniques and a carefully curated dataset, we've developed a tool that could significantly improve early detection rates and patient outcomes in dermatology.</p>
             <a href="https://github.com/sanjar-techie/lesion-classification" target="_blank">View on GitHub</a>
         </div>
