@@ -82,15 +82,15 @@
             margin-bottom: 20px;
         }
         .image-container img {
-            width: 48%;
-            height: 200px;
+            width: 49%;
+            height: auto;
             object-fit: cover;
             border-radius: 8px;
         }
         .video-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%;
+            padding-bottom: 40%; /* Adjusted for smaller height */
             margin-bottom: 20px;
         }
         .video-container iframe {
@@ -104,10 +104,15 @@
         }
         .project-image {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            max-height: 400px;
+            object-fit: contain;
             border-radius: 8px;
             margin-bottom: 20px;
+        }
+        .tech-stack {
+            font-style: italic;
+            color: #007bff;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -127,7 +132,7 @@
         </div>
 
         <div class="project">
-            <h2>Quadruped Robot System: Pushing the Boundaries of Legged Locomotion</h2>
+            <h2>Quadruped Robot System: Advanced Legged Locomotion</h2>
             <div class="image-container">
                 <img src="resources/quadruped1.jpg" alt="Quadruped Robot">
                 <img src="resources/quadruped2.jpg" alt="Quadruped Robot in Action">
@@ -135,30 +140,34 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/U2KB_e_6qTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Embark on a journey through the cutting-edge world of quadruped robotics. This project showcases the fusion of advanced mechanical design and sophisticated AI algorithms, resulting in a robot capable of navigating complex terrains with unprecedented agility. Witness how reinforcement learning pushes the boundaries of what's possible in legged locomotion, opening doors to applications in search and rescue, planetary exploration, and beyond.</p>
+            <div class="tech-stack">Technologies: C++, ROS, Reinforcement Learning, Motion Planning, Control Systems</div>
+            <p>Led the development of a state-of-the-art quadruped robot system, integrating advanced hardware assembly with cutting-edge software implementation. Leveraged reinforcement learning techniques to create adaptive locomotion controllers, significantly enhancing the robot's stability and versatility across diverse terrains. Implemented sophisticated motion planning algorithms and control systems, pushing the boundaries of legged robotics technology.</p>
         </div>
 
         <div class="project">
-            <h2>Revolutionizing Warehouse Logistics with Autonomous Mobile Robots (AMRs)</h2>
+            <h2>Autonomous Mobile Robots (AMRs) for Warehouse Automation</h2>
             <img src="resources/amr.PNG" alt="AMR in Warehouse" class="project-image">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/OQCnwZKU0rQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Step into the future of warehouse automation with our fleet of Autonomous Mobile Robots (AMRs). This project demonstrates how intelligent navigation systems and custom docking solutions can transform traditional warehouses into smart, efficient logistics hubs. Experience firsthand how these robots navigate dynamic environments, interact with human workers, and optimize inventory management, paving the way for Industry 4.0.</p>
+            <div class="tech-stack">Technologies: ROS2, Nav2, C++, Apriltag Detection, Hardware Interfacing</div>
+            <p>Engineered a fleet of Autonomous Mobile Robots (AMRs) for warehouse automation, focusing on robust navigation and efficient task execution. Implemented autonomous navigation systems using the Nav2 framework, ensuring optimal path planning and obstacle avoidance. Developed custom hardware interfaces and control packages, including an innovative docking system utilizing Apriltag detection, significantly enhancing the precision and reliability of robot operations in dynamic warehouse environments.</p>
         </div>
 
         <div class="project">
-            <h2>Air Gesture Control: Redefining Human-Drone Interaction</h2>
+            <h2>Air Gesture Control: Advanced Human-Drone Interaction</h2>
             <img src="resources/drone.PNG" alt="Gesture-controlled Drone" class="project-image">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/jC1L5EdkM9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Imagine controlling a drone with just a wave of your hand. This project brings that sci-fi concept to life, showcasing an intuitive gesture-based interface for drone control. By combining computer vision, machine learning, and advanced flight algorithms, we've created a system that not only responds to human gestures but also maintains stable flight and performs complex maneuvers autonomously. Explore the potential of this technology in fields ranging from cinematography to search and rescue operations.</p>
+            <div class="tech-stack">Technologies: Computer Vision, Machine Learning, ROS, ORB_SLAM3, PID Control</div>
+            <p>Pioneered an innovative gesture-based drone control system, merging advanced computer vision techniques with intuitive human-machine interaction. Developed a ROS-based mission planner capable of interpreting complex gestures and translating them into precise drone maneuvers. Integrated ORB_SLAM3 for robust visual navigation and implemented a sophisticated PID velocity controller, enabling smooth and accurate drone positioning. This project demonstrates the potential for revolutionizing drone control in various applications, from aerial cinematography to search and rescue operations.</p>
         </div>
 
         <div class="project">
-            <h2>AI in Healthcare: Advancing Dermatological Diagnostics</h2>
-            <p>Delve into the intersection of artificial intelligence and medical diagnostics with our advanced skin lesion classification system. This project showcases how deep learning models can assist dermatologists in identifying potential skin cancers with high accuracy. By leveraging state-of-the-art computer vision techniques and a carefully curated dataset, we've developed a tool that could significantly improve early detection rates and patient outcomes in dermatology.</p>
+            <h2>AI in Healthcare: Advanced Dermatological Diagnostics</h2>
+            <div class="tech-stack">Technologies: Deep Learning, TensorFlow, Computer Vision, Data Augmentation</div>
+            <p>Developed an advanced skin lesion classification system using deep learning techniques, aimed at assisting dermatologists in early skin cancer detection. Implemented a custom ResNet-50 model with Convolutional Block Attention Module (CBAM), significantly improving the accuracy of lesion classification. Utilized sophisticated data augmentation techniques on the HAM10000 dataset to address class imbalance, enhancing the model's robustness and generalization capabilities. This project showcases the potential of AI in revolutionizing medical diagnostics, particularly in the field of dermatology.</p>
             <a href="https://github.com/sanjar-techie/lesion-classification" target="_blank">View on GitHub</a>
         </div>
     </div>
