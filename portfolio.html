@@ -56,58 +56,52 @@
         .project h2 {
             color: #2c3e50;
         }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="nav-toggle" onclick="toggleNav()">
-        <i class="fas fa-paper-plane"></i>
-    </div>
-    <nav class="nav" id="nav">
-        <a href="index.html" class="active">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-    </nav>
-    
-    <script>
-    function toggleNav() {
-        const nav = document.getElementById('nav');
-        nav.classList.toggle('active');
-    }
-    </script>
-    
     <div class="nav">
         <a href="index.html">Resume</a>
         <a href="portfolio.html" class="active">Portfolio</a>
     </div>
 
     <div class="paper">
-        <h1>Sanjar Atamuradov - Portfolio</h1>
+        <img src="resources/profile.jpg" alt="Sanjar Atamuradov" class="profile-img">
+        <h1>Sanjar Atamuradov - Engineering Portfolio</h1>
 
         <div class="project">
-            <h2>Quadruped Robot System</h2>
-            <img src="images/quadruped_robot.jpg" alt="Quadruped Robot">
-            <p>Developed and integrated a complete quadruped robot system, focusing on both hardware assembly and software implementation. Implemented reinforcement learning-based controllers for quadruped robot locomotion, enhancing stability and adaptability in various terrains.</p>
-            <a href="#" target="_blank">Watch Demo</a>
+            <h2>Quadruped Robot System: Pushing the Boundaries of Legged Locomotion</h2>
+            <img src="resources/quadruped1.jpg" alt="Quadruped Robot">
+            <img src="resources/quadruped2.jpg" alt="Quadruped Robot in Action">
+            <p>Embark on a journey through the cutting-edge world of quadruped robotics. This project showcases the fusion of advanced mechanical design and sophisticated AI algorithms, resulting in a robot capable of navigating complex terrains with unprecedented agility. Witness how reinforcement learning pushes the boundaries of what's possible in legged locomotion, opening doors to applications in search and rescue, planetary exploration, and beyond.</p>
+            <a href="https://youtube.com/shorts/U2KB_e_6qTM?feature=share" target="_blank">Watch Demo</a>
         </div>
 
         <div class="project">
-            <h2>Autonomous Mobile Robots (AMRs) for Warehouse Automation</h2>
-            <img src="images/amr_warehouse.jpg" alt="AMR in Warehouse">
-            <p>Built AMRs implementing autonomous navigation systems using the Nav2 open-source framework. Developed a custom control package for docking the AMR based on apriltag detection.</p>
-            <a href="#" target="_blank">Watch Demo</a>
+            <h2>Revolutionizing Warehouse Logistics with Autonomous Mobile Robots (AMRs)</h2>
+            <img src="/api/placeholder/400/320" alt="AMR in Warehouse">
+            <p>Step into the future of warehouse automation with our fleet of Autonomous Mobile Robots (AMRs). This project demonstrates how intelligent navigation systems and custom docking solutions can transform traditional warehouses into smart, efficient logistics hubs. Experience firsthand how these robots navigate dynamic environments, interact with human workers, and optimize inventory management, paving the way for Industry 4.0.</p>
+            <a href="https://youtube.com/shorts/OQCnwZKU0rQ?feature=share" target="_blank">Watch AMRs in Action</a>
         </div>
 
         <div class="project">
-            <h2>Autonomous Gesture-controlled Drone</h2>
-            <img src="images/gesture_drone.jpg" alt="Gesture-controlled Drone">
-            <p>Developed a ROS-based mission planner for dynamic task handling, such as human approach, photo capture, and pose-based maneuvers. Utilized ORB_SLAM3 for visual navigation and implemented a PID velocity controller.</p>
+            <h2>Air Gesture Control: Redefining Human-Drone Interaction</h2>
+            <img src="/api/placeholder/400/320" alt="Gesture-controlled Drone">
+            <p>Imagine controlling a drone with just a wave of your hand. This project brings that sci-fi concept to life, showcasing an intuitive gesture-based interface for drone control. By combining computer vision, machine learning, and advanced flight algorithms, we've created a system that not only responds to human gestures but also maintains stable flight and performs complex maneuvers autonomously. Explore the potential of this technology in fields ranging from cinematography to search and rescue operations.</p>
             <a href="https://github.com/sanjar-techie/AirGestureControl" target="_blank">View on GitHub</a> |
-            <a href="#" target="_blank">Watch Demo</a>
+            <a href="https://youtu.be/jC1L5EdkM9w" target="_blank">Watch Demo</a>
         </div>
 
         <div class="project">
-            <h2>AI-based Medical Diagnosis</h2>
-            <img src="images/medical_ai.jpg" alt="Medical AI Diagnosis">
-            <p>Implemented a ResNet-50 model with CBAM for lesion classification, leveraging TensorFlow for medical diagnosis. Conducted data augmentation on the HAM10000 dataset to address class imbalance and improve accuracy.</p>
+            <h2>AI in Healthcare: Advancing Dermatological Diagnostics</h2>
+            <img src="/api/placeholder/400/320" alt="Medical AI Diagnosis">
+            <p>Delve into the intersection of artificial intelligence and medical diagnostics with our advanced skin lesion classification system. This project showcases how deep learning models can assist dermatologists in identifying potential skin cancers with high accuracy. By leveraging state-of-the-art computer vision techniques and a carefully curated dataset, we've developed a tool that could significantly improve early detection rates and patient outcomes in dermatology.</p>
             <a href="https://github.com/sanjar-techie/lesion-classification" target="_blank">View on GitHub</a>
         </div>
     </div>
