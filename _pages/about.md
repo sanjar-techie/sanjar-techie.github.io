@@ -22,7 +22,7 @@ social: false  # Disable the default social icons at the bottom
 
 Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-manipulation. Previously, I studied Computer Science & Robotics at KAIST in South Korea (2020–2024). My passion lies at the intersection of robotics and AI.
 
-<hr style="margin: 40px 0;">
+<hr style="margin: 140px 0;">
 
 
 <div class="container">
@@ -72,7 +72,7 @@ Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-m
 </div>
 
 <style>
-  .container { max-width: 1000px; margin: 0 auto; font-size: 0.9em; }
+  .container { max-width: 1000px; margin: 0 auto; font-size: 1.0em; }
   .entry.row { display: flex; align-items: center; margin-bottom: 25px; }
   .timespan { width: 130px; font-weight: bold; }
   .ico { display: flex; align-items: center; margin-right: 20px; }
