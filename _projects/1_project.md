@@ -1,81 +1,62 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Quadruped Robot System
+description: Advanced Legged Locomotion
+img: assets/img/quadruped1.jpg
 importance: 1
-category: work
-related_publications: true
+category: robotics
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Quadruped Robot System
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Advanced Legged Locomotion with Reinforcement Learning
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/quadruped1.jpg" title="Quadruped Robot" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/quadruped2.jpg" title="Quadruped Robot in Action" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Quadruped robot platform demonstrating advanced terrain navigation capabilities using reinforcement learning techniques.
 </div>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://www.youtube.com/embed/U2KB_e_6qTM" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Video demonstration of the quadruped robot's mobility and adaptive locomotion control.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Project Overview
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Building on my experience at Raion Robotics, I collaborated on the development of a state-of-the-art quadruped robot system that integrates advanced hardware assembly with cutting-edge software implementation. This project focused on creating robust locomotion controllers using reinforcement learning techniques to enable adaptive motion across diverse terrain conditions.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Technical Implementation
 
-{% raw %}
+The project involved several key technical components:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Reinforcement Learning Framework**: Developed using privileged learning and temporal convolutional networks for zero-shot generalization to unseen terrain conditions
+- **Motion Planning**: Implemented sophisticated algorithms to generate optimal trajectories while maintaining stability
+- **Control Systems**: Designed low-level control systems that transform high-level commands into precise joint movements
+- **Hardware Integration**: Integrated sensors and actuators to create a responsive and robust robotic platform
 
-{% endraw %}
+## Key Achievements
+
+- Successfully implemented reinforcement learning techniques that significantly enhanced the robot's stability and versatility across diverse terrains
+- Achieved adaptive locomotion control that allows the robot to navigate challenging environments autonomously
+- Developed a robust control architecture that bridges the gap between high-level planning and low-level motor control
+- Optimized the system for real-time performance, enabling responsive behavior in dynamic environments
+
+## Technologies Used
+
+- **Programming**: C++, Python
+- **Frameworks**: ROS, PyTorch
+- **Techniques**: Reinforcement Learning, Motion Planning, Control Systems
+- **Hardware**: Custom quadruped platform with integrated sensors and actuators
+
+This project showcases the potential of combining advanced AI techniques with robotic hardware to push the boundaries of legged robotics technology.

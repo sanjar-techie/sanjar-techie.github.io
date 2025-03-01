@@ -22,7 +22,7 @@ social: false  # Disable the default social icons at the bottom
 
 Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-manipulation. Previously, I studied Computer Science & Robotics at KAIST in South Korea (2020–2024). My passion lies at the intersection of robotics and AI.
 
-<hr style="margin: 140px 0;">
+<hr style="margin: 150px 0;">
 
 
 <div class="container">

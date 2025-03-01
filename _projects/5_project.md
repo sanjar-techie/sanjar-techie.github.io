@@ -1,80 +1,54 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Mobile Manipulation
+description: LeRobot Framework Implementation
+img: assets/img/lerobot.jpg
+importance: 5
+category: robotics
+github: https://github.com/sanjar-techie/lerobot
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Mobile Manipulation
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## LeRobot Framework Implementation
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lerobot.jpg" title="Mobile Manipulation Robot" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Mobile robot platform running the LeRobot framework for autonomous navigation and manipulation.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Project Overview
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+I implemented the LeRobot framework to train a navigation policy for a mobile robot, utilizing imitation learning with teleoperated demonstrations for efficient data collection. This project focused on developing robust autonomy for mobile manipulation tasks through a combination of learning-based approaches and optimized hardware communication.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Technical Implementation
 
-{% raw %}
+The project involved several key technical components:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Imitation Learning**: Implemented learning from demonstration techniques to train navigation policies from human-teleoperated examples
+- **Data Collection**: Created an efficient pipeline for collecting and processing training data from teleoperated demonstrations
+- **UART Optimization**: Optimized UART for low-latency communication between system components
+- **Device Management**: Implemented reliable device management with udev rules for consistent hardware access
 
-{% endraw %}
+## Key Achievements
+
+- Successfully trained a navigation policy that enables autonomous robot movement in various environments
+- Optimized communication protocols to achieve low-latency control of robot hardware
+- Implemented reliable device management systems for consistent operation
+- Created a framework that simplifies the development of autonomous capabilities for mobile robots
+
+## Technologies Used
+
+- **Programming**: Python, C++
+- **Frameworks**: LeRobot, PyTorch
+- **Techniques**: Imitation Learning, Teleoperation
+- **Hardware Communication**: UART, udev rules
+- **System Integration**: Robot control architecture, sensor integration
+
+This project demonstrates the effective use of learning-based approaches to develop autonomous capabilities for mobile robots, with particular emphasis on efficient data collection and robust system integration.
+
+View project code on [GitHub](https://github.com/sanjar-techie/lerobot)

@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: true
+nav: false
 nav_order: 3  # Follows About (1), Publications (2), Projects (3)
 cv_pdf: Sanjar_Atamuradov_CV.pdf  # Place your PDF in assets/pdf/ or use an external URL
 description: >

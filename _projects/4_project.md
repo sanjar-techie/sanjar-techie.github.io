@@ -1,80 +1,54 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: AI in Healthcare
+description: Advanced Dermatological Diagnostics
+img: assets/img/skin-lesion.jpg
+importance: 4
+category: ai
+github: https://github.com/sanjar-techie/lesion-classification
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# AI in Healthcare
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Advanced Dermatological Diagnostics
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/skin-lesion.jpg" title="Skin Lesion Classification System" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Visualization of the skin lesion classification system showing sample inputs and diagnostic outputs.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Project Overview
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+I developed an advanced skin lesion classification system using deep learning techniques, aimed at assisting dermatologists in early skin cancer detection. This project leverages the power of artificial intelligence to improve medical diagnostics in dermatology, potentially leading to earlier treatment and better patient outcomes.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Technical Implementation
 
-{% raw %}
+The project involved several key technical components:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Custom ResNet-50 Architecture**: Implemented and modified a ResNet-50 model with Convolutional Block Attention Module (CBAM) for improved feature extraction and classification accuracy
+- **Data Augmentation**: Utilized sophisticated data augmentation techniques on the HAM10000 dataset to address class imbalance issues
+- **Model Training and Optimization**: Fine-tuned the model parameters to maximize classification accuracy while maintaining generalization capabilities
+- **Validation and Testing**: Rigorously validated the model against unseen test data to ensure robust performance across various lesion types
 
-{% endraw %}
+## Key Achievements
+
+- Successfully built a deep learning model that accurately classifies various types of skin lesions
+- Significantly improved classification accuracy through custom architecture modifications and attention mechanisms
+- Addressed class imbalance issues through innovative data augmentation techniques
+- Created a system that can assist dermatologists in making more accurate diagnoses
+
+## Technologies Used
+
+- **Programming**: Python
+- **Frameworks**: TensorFlow, Keras
+- **Techniques**: Deep Learning, Computer Vision, Data Augmentation
+- **Architectures**: ResNet-50, Convolutional Block Attention Module (CBAM)
+- **Dataset**: HAM10000
+
+This project showcases the potential of AI in revolutionizing medical diagnostics, particularly in the field of dermatology. By providing dermatologists with an additional diagnostic tool, the system aims to improve the accuracy and efficiency of skin cancer detection.
+
+View project code on [GitHub](https://github.com/sanjar-techie/lesion-classification)
