@@ -41,7 +41,7 @@ Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-m
     <div class="timespan">2024</div>
     <div class="ico">
       <div class="entry-dot" style="width: 10px; height: 10px; background-color: #333; border-radius: 50%; margin-right: 15px;"></div>
-      <img src="/assets/img/raion_logo.png" style="max-width: 32px;" alt="Raion Robotics Logo" />
+      <!-- <img src="/assets/img/raion_logo.png" style="max-width: 32px;" alt="Raion Robotics Logo" /> -->
     </div>
     <div class="desc">
       AI & Robotics Engineering Intern at <a href="https://raionrobotics.com/">Raion Robotics</a>, South Korea (May–Aug 2024). Worked on quadruped robot locomotion, focusing on reinforcement learning controllers.
@@ -72,9 +72,9 @@ Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-m
 </div>
 
 <style>
-  .container { max-width: 1000px; margin: 0 auto; font-size: 1.1em; }
+  .container { max-width: 1000px; margin: 0 auto; font-size: 0.9em; }
   .entry.row { display: flex; align-items: center; margin-bottom: 25px; }
-  .timespan { width: 120px; font-weight: bold; }
+  .timespan { width: 130px; font-weight: bold; }
   .ico { display: flex; align-items: center; margin-right: 20px; }
   .desc { flex: 1; }
 </style>
