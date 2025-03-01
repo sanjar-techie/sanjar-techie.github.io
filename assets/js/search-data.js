@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A collection of my work in robotics, AI, and automation systems.",
+          description: "A collection of my work in robotics, AI, and computer vision.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/portfolio/";
@@ -401,24 +401,24 @@ ninja.data = [{
           description: "Warehouse Automation Systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-air-gesture-control",
-          title: 'Air Gesture Control',
+            },},{id: "projects-gesture-based-drone-control",
+          title: 'Gesture-based Drone Control',
           description: "Advanced Human-Drone Interaction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-ai-in-healthcare",
-          title: 'AI in Healthcare',
-          description: "Advanced Dermatological Diagnostics",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
             },},{id: "projects-mobile-manipulation",
           title: 'Mobile Manipulation',
           description: "LeRobot Framework Implementation",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/projects/4_project/";
             },},{id: "projects-bipedal-robot-walking",
           title: 'Bipedal Robot Walking',
           description: "Optimization-Based Control",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-project-7",
