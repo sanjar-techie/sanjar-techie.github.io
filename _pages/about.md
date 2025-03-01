@@ -24,7 +24,6 @@ Hi, I’m a student at Georgia Tech, currently doing research on humanoid loco-m
 
 <hr style="margin: 40px 0;">
 
-## Timeline
 
 <div class="container">
   <div class="entry row">
