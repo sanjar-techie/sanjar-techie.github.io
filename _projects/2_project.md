@@ -4,7 +4,7 @@ title: Autonomous Mobile Robots
 description: Warehouse Automation Systems
 img: assets/img/amr.PNG
 importance: 2
-category: automation
+category: work
 ---
 
 # Autonomous Mobile Robots (AMRs)

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Air Gesture Control
+title: Gesture-based Drone Control
 description: Advanced Human-Drone Interaction
 img: assets/img/drone.PNG
 importance: 3
-category: robotics
+category: work
 github: https://github.com/sanjar-techie/AirGestureControl
 ---
 

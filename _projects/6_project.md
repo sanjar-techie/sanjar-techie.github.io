@@ -1,53 +1,80 @@
 ---
 layout: page
-title: Bipedal Robot Walking
-description: Optimization-Based Control
-img: assets/img/biped.jpg
-importance: 6
-category: robotics
-github: https://github.com/sanjar-techie/biped_control
+title: project 6
+description: a project with no image
+img:
+importance: 4
+category: fun
 ---
 
-# Bipedal Robot Walking
+Every project has a beautiful feature showcase page.
+It's easy to include images in a flexible 3-column grid format.
+Make your photos 1/3, 2/3, or full width.
 
-## Optimization-Based Control System
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+
+    ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/biped.jpg" title="Bipedal Robot Walking" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Bipedal robot demonstrating stable walking patterns generated through optimization-based control.
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
 </div>
 
-## Project Overview
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-I achieved stable bipedal walking by developing an optimization framework that generates joint trajectories through 6th-order polynomial parameterization. The system optimizes for center of mass (COM) stability and joint constraints via forward kinematics, resulting in smooth and balanced walking motions.
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
 
-## Technical Implementation
+The code is simple.
+Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
+To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
+Here's the code for the last row of images above:
 
-The project involved several key technical components:
+{% raw %}
 
-- **Trajectory Optimization**: Developed an optimization framework that generates optimal joint trajectories using 6th-order polynomial parameterization
-- **COM Stability**: Implemented constraints to ensure center of mass stability throughout the walking cycle
-- **Forward Kinematics**: Used forward kinematics to validate joint constraints and ensure physically realistic movements
-- **Cyclic Walking**: Implemented symmetric left-right swing trajectories with smooth transitions for continuous bipedal locomotion
+```html
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+```
 
-## Key Achievements
-
-- Successfully achieved stable bipedal walking through sophisticated trajectory optimization
-- Implemented cyclic walking by generating symmetric left-right swing trajectories
-- Created smooth transitions between steps for continuous bipedal locomotion
-- Developed a mathematically sound approach to bipedal locomotion based on optimization principles
-
-## Technologies Used
-
-- **Programming**: Python, MATLAB
-- **Techniques**: Trajectory Optimization, Forward Kinematics, Robot Dynamics
-- **Mathematics**: 6th-order Polynomial Parameterization, Constrained Optimization
-- **Robotics**: Bipedal Locomotion, Joint Control
-
-This project demonstrates my ability to apply advanced optimization techniques and robot dynamics principles to solve complex problems in legged locomotion.
-
-View project code on [GitHub](https://github.com/sanjar-techie/biped_control)
+{% endraw %}

@@ -1,54 +1,63 @@
 ---
 layout: page
-title: AI in Healthcare
-description: Advanced Dermatological Diagnostics
-img: assets/img/skin-lesion.jpg
+title: Mobile Manipulation
+description: LeRobot Framework Implementation
+img: assets/img/lerobot.jpeg
 importance: 4
-category: ai
-github: https://github.com/sanjar-techie/lesion-classification
+category: work
+github: https://github.com/sanjar-techie/lerobot
 ---
 
-# AI in Healthcare
+# Mobile Manipulation
 
-## Advanced Dermatological Diagnostics
+## LeRobot Framework Implementation
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/skin-lesion.jpg" title="Skin Lesion Classification System" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lerobot.jpg" title="Mobile Manipulation Robot" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Visualization of the skin lesion classification system showing sample inputs and diagnostic outputs.
+    Mobile robot platform running the LeRobot framework for autonomous navigation and manipulation.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://youtube.com/shorts/lrp37r1r9lk" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Demonstration of the mobile robot's navigation capabilities using the LeRobot framework.
 </div>
 
 ## Project Overview
 
-I developed an advanced skin lesion classification system using deep learning techniques, aimed at assisting dermatologists in early skin cancer detection. This project leverages the power of artificial intelligence to improve medical diagnostics in dermatology, potentially leading to earlier treatment and better patient outcomes.
+I implemented the LeRobot framework to train a navigation policy for a mobile robot, utilizing imitation learning with teleoperated demonstrations for efficient data collection. This project focused on developing robust autonomy for mobile manipulation tasks through a combination of learning-based approaches and optimized hardware communication.
 
 ## Technical Implementation
 
 The project involved several key technical components:
 
-- **Custom ResNet-50 Architecture**: Implemented and modified a ResNet-50 model with Convolutional Block Attention Module (CBAM) for improved feature extraction and classification accuracy
-- **Data Augmentation**: Utilized sophisticated data augmentation techniques on the HAM10000 dataset to address class imbalance issues
-- **Model Training and Optimization**: Fine-tuned the model parameters to maximize classification accuracy while maintaining generalization capabilities
-- **Validation and Testing**: Rigorously validated the model against unseen test data to ensure robust performance across various lesion types
+- **Imitation Learning**: Implemented learning from demonstration techniques to train navigation policies from human-teleoperated examples
+- **Data Collection**: Created an efficient pipeline for collecting and processing training data from teleoperated demonstrations
+- **UART Optimization**: Optimized UART for low-latency communication between system components
+- **Device Management**: Implemented reliable device management with udev rules for consistent hardware access
 
 ## Key Achievements
 
-- Successfully built a deep learning model that accurately classifies various types of skin lesions
-- Significantly improved classification accuracy through custom architecture modifications and attention mechanisms
-- Addressed class imbalance issues through innovative data augmentation techniques
-- Created a system that can assist dermatologists in making more accurate diagnoses
+- Successfully trained a navigation policy that enables autonomous robot movement in various environments
+- Optimized communication protocols to achieve low-latency control of robot hardware
+- Implemented reliable device management systems for consistent operation
+- Created a framework that simplifies the development of autonomous capabilities for mobile robots
 
 ## Technologies Used
 
-- **Programming**: Python
-- **Frameworks**: TensorFlow, Keras
-- **Techniques**: Deep Learning, Computer Vision, Data Augmentation
-- **Architectures**: ResNet-50, Convolutional Block Attention Module (CBAM)
-- **Dataset**: HAM10000
+- **Programming**: Python, C++
+- **Frameworks**: LeRobot, PyTorch
+- **Techniques**: Imitation Learning, Teleoperation
+- **Hardware Communication**: UART, udev rules
+- **System Integration**: Robot control architecture, sensor integration
 
-This project showcases the potential of AI in revolutionizing medical diagnostics, particularly in the field of dermatology. By providing dermatologists with an additional diagnostic tool, the system aims to improve the accuracy and efficiency of skin cancer detection.
+This project demonstrates the effective use of learning-based approaches to develop autonomous capabilities for mobile robots, with particular emphasis on efficient data collection and robust system integration.
 
-View project code on [GitHub](https://github.com/sanjar-techie/lesion-classification)
+View project code on [GitHub](https://github.com/sanjar-techie/lerobot)

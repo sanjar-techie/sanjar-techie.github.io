@@ -1,54 +1,62 @@
 ---
 layout: page
-title: Mobile Manipulation
-description: LeRobot Framework Implementation
-img: assets/img/lerobot.jpg
+title: Bipedal Robot Walking
+description: Optimization-Based Control
+img: assets/img/biped.jpg
 importance: 5
-category: robotics
-github: https://github.com/sanjar-techie/lerobot
+category: work
+github: https://github.com/sanjar-techie/biped_control
 ---
 
-# Mobile Manipulation
+# Bipedal Robot Walking
 
-## LeRobot Framework Implementation
+## Optimization-Based Control System
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lerobot.jpg" title="Mobile Manipulation Robot" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/biped.jpg" title="Bipedal Robot Walking" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Mobile robot platform running the LeRobot framework for autonomous navigation and manipulation.
+    Bipedal robot demonstrating stable walking patterns generated through optimization-based control.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/embed/04nWJF4JICA" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Video demonstration of the bipedal robot's stable walking patterns using optimization-based trajectory generation.
 </div>
 
 ## Project Overview
 
-I implemented the LeRobot framework to train a navigation policy for a mobile robot, utilizing imitation learning with teleoperated demonstrations for efficient data collection. This project focused on developing robust autonomy for mobile manipulation tasks through a combination of learning-based approaches and optimized hardware communication.
+I achieved stable bipedal walking by developing an optimization framework that generates joint trajectories through 6th-order polynomial parameterization. The system optimizes for center of mass (COM) stability and joint constraints via forward kinematics, resulting in smooth and balanced walking motions.
 
 ## Technical Implementation
 
 The project involved several key technical components:
 
-- **Imitation Learning**: Implemented learning from demonstration techniques to train navigation policies from human-teleoperated examples
-- **Data Collection**: Created an efficient pipeline for collecting and processing training data from teleoperated demonstrations
-- **UART Optimization**: Optimized UART for low-latency communication between system components
-- **Device Management**: Implemented reliable device management with udev rules for consistent hardware access
+- **Trajectory Optimization**: Developed an optimization framework that generates optimal joint trajectories using 6th-order polynomial parameterization
+- **COM Stability**: Implemented constraints to ensure center of mass stability throughout the walking cycle
+- **Forward Kinematics**: Used forward kinematics to validate joint constraints and ensure physically realistic movements
+- **Cyclic Walking**: Implemented symmetric left-right swing trajectories with smooth transitions for continuous bipedal locomotion
 
 ## Key Achievements
 
-- Successfully trained a navigation policy that enables autonomous robot movement in various environments
-- Optimized communication protocols to achieve low-latency control of robot hardware
-- Implemented reliable device management systems for consistent operation
-- Created a framework that simplifies the development of autonomous capabilities for mobile robots
+- Successfully achieved stable bipedal walking through sophisticated trajectory optimization
+- Implemented cyclic walking by generating symmetric left-right swing trajectories
+- Created smooth transitions between steps for continuous bipedal locomotion
+- Developed a mathematically sound approach to bipedal locomotion based on optimization principles
 
 ## Technologies Used
 
-- **Programming**: Python, C++
-- **Frameworks**: LeRobot, PyTorch
-- **Techniques**: Imitation Learning, Teleoperation
-- **Hardware Communication**: UART, udev rules
-- **System Integration**: Robot control architecture, sensor integration
+- **Programming**: Python, MATLAB
+- **Techniques**: Trajectory Optimization, Forward Kinematics, Robot Dynamics
+- **Mathematics**: 6th-order Polynomial Parameterization, Constrained Optimization
+- **Robotics**: Bipedal Locomotion, Joint Control
 
-This project demonstrates the effective use of learning-based approaches to develop autonomous capabilities for mobile robots, with particular emphasis on efficient data collection and robust system integration.
+This project demonstrates my ability to apply advanced optimization techniques and robot dynamics principles to solve complex problems in legged locomotion.
 
-View project code on [GitHub](https://github.com/sanjar-techie/lerobot)
+View project code on [GitHub](https://github.com/sanjar-techie/biped_control)

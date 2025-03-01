@@ -4,7 +4,7 @@ title: Quadruped Robot System
 description: Advanced Legged Locomotion
 img: assets/img/quadruped1.jpg
 importance: 1
-category: robotics
+category: work
 ---
 
 # Quadruped Robot System

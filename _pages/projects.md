@@ -2,12 +2,26 @@
 layout: page
 title: Projects
 permalink: /portfolio/
-description: A collection of my work in robotics, AI, and automation systems.
+description: A collection of my work in robotics, AI, and computer vision.
 nav: true
 nav_order: 2
-display_categories: [robotics, ai, automation]
+display_categories: [work, fun]
 horizontal: false
 ---
+
+<style>
+  /* Custom CSS to standardize project image sizes */
+  .projects .card img {
+    height: 200px;  /* Fixed height */
+    object-fit: cover;  /* Maintains aspect ratio while covering the container */
+    width: 100%;  /* Full width of the card */
+  }
+  
+  .projects .card {
+    height: 100%;  /* Make all cards the same height */
+    margin-bottom: 20px;  /* Add some space between rows */
+  }
+</style>
 
 <!-- pages/projects.md -->
 <div class="projects">
