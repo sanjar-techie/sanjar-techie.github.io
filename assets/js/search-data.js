@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "A collection of my robotics and AI projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          title: "CV",
+          description: "Sanjar Atamuradov |   satamuradov3@gatech.edu |   sanjar-techie |   sanjar-techie |   sanjar-techie.github.io/portfolio",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
