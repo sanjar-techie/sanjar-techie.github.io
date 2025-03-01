@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /portfolio/
-description: A collection of my work in robotics, AI, and computer vision.
+description: A collection of my work in AI and Robotics.
 nav: true
 nav_order: 2
 display_categories: [work, fun]
