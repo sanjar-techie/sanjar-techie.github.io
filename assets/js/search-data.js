@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A collection of my robotics and AI projects.",
+          description: "A collection of my work in robotics, AI, and automation systems.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Sanjar Atamuradov |   satamuradov3@gatech.edu |   sanjar-techie |   sanjar-techie |   sanjar-techie.github.io/portfolio",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/portfolio/";
           },
         },{id: "nav-publications",
           title: "Publications",
@@ -398,34 +391,34 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-quadruped-robot-system",
+          title: 'Quadruped Robot System',
+          description: "Advanced Legged Locomotion",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-autonomous-mobile-robots",
+          title: 'Autonomous Mobile Robots',
+          description: "Warehouse Automation Systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-air-gesture-control",
+          title: 'Air Gesture Control',
+          description: "Advanced Human-Drone Interaction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-ai-in-healthcare",
+          title: 'AI in Healthcare',
+          description: "Advanced Dermatological Diagnostics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-mobile-manipulation",
+          title: 'Mobile Manipulation',
+          description: "LeRobot Framework Implementation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-bipedal-robot-walking",
+          title: 'Bipedal Robot Walking',
+          description: "Optimization-Based Control",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-project-7",
